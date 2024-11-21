@@ -9,6 +9,7 @@ import pages.TextBoxPage;
 
 import static io.qameta.allure.Allure.step;
 
+@Tag("demoqa")
 public class RegistrationRemoteTests {
 
     TestData testData = new TestData();
@@ -20,13 +21,10 @@ public class RegistrationRemoteTests {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserPosition = "0x0";
         Configuration.browserSize = "1920x1080";
-//        Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-
     }
 
     @Test
-    @Tag("demoqa")
     void successRegistrationTest() {
         step("Open form", () -> {
             registrationPage.openPage();
@@ -72,7 +70,7 @@ public class RegistrationRemoteTests {
             registrationPage.openPage();
         });
 
-        step("Fill form", () -> {
+        step("Fill minimal form", () -> {
             registrationPage
                     .setFirstName(testData.firstName)
                     .setLastName(testData.lastName)
