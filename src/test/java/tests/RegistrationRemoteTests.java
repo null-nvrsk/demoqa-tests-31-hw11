@@ -33,6 +33,8 @@ public class RegistrationRemoteTests {
     @AfterEach
     void addAttachment() {
         Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
     }
 
     @Test
