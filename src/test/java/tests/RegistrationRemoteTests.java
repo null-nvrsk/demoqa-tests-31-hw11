@@ -14,6 +14,7 @@ import pages.TextBoxPage;
 
 import java.util.Map;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static io.qameta.allure.Allure.step;
 
 @Tag("demoqa")
@@ -46,6 +47,8 @@ public class RegistrationRemoteTests {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+
+        closeWebDriver();
     }
 
     @Test
