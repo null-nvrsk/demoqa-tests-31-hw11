@@ -1,0 +1,20 @@
+{
+  "base": {
+    "logo": "",
+    "project": "",
+    "environment": "",
+    "comment": "",
+    "reportLink": "",
+    "language": "ru",
+    "allureFolder": "",
+    "enableChart": false,
+    "enableSuitesPublishing": false,
+    "customData": {}
+  },
+  "telegram": {
+    "token": "",
+    "chat": "",
+    "replyTo": "",
+    "templatePath": "/templates/telegram.ftl"
+  }
+}
