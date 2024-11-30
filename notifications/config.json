@@ -1,15 +1,12 @@
 {
   "base": {
-    "logo": "",
-    "project": "",
-    "environment": "",
-    "comment": "",
-    "reportLink": "",
-    "language": "ru",
-    "allureFolder": "",
-    "enableChart": false,
-    "enableSuitesPublishing": false,
-    "customData": {}
+    "project": "${JOB_NAME}",
+    "environment": "${ENVIRONMENT}",
+    "comment": "${COMMENT}",
+    "reportLink": "${BUILD_URL}",
+    "language": "en",
+    "allureFolder": "allure-report",
+    "enableChart": true
   },
   "telegram": {
     "token": "",
